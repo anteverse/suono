@@ -48,6 +48,7 @@ def gradient_descent(alpha, x, y, iterations_max, stop, regularization=0.0):
     theta = np.ones(n)
 
     # little trick to help convergence
+    # to be replaced by a real normalization function
     theta *= y[0] / (x[1][0]**(n-1))
 
     # local variables
